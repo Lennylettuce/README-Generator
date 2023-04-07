@@ -1,5 +1,5 @@
-#lkj
-![License Badge](https://shields.io/badge/license-MIT-blue)
+#Dolphin Studies
+![License Badge](https://shields.io/badge/license-Apache-blue)
 ## Table of Contents
 1. [Description](#description)
 2. [Installation](#installation)
@@ -10,17 +10,17 @@
 7. [Questions](#questions)
 
 ##Description
-lkj
+Stores data collected from marine biologists
 ##Installation
-lkj
+install guidelines
 ##Usage
-lkj
+usage guidelines
 ##Contributing
-lkj
+github fork code, work code, pull request
 ##Tests
 npm test
 ## License
-Checkouthttps://mit-license.org/for this project license information.
+Checkouthttps://apache.org/licenses/LICENSE-2.0.htmlfor this project license information.
 ##Questions
 Checkout other projects [HERE](https://github.com/undefined) on Github 
-Direct any questions to lkj. 
+Direct any questions to gmail.com. 
