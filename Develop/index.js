@@ -37,7 +37,7 @@ const questions = () => {
             type: 'list',
             name: 'license',
             message: 'Choose your project license.',
-            choices: ['MIT', 'GNU'],
+            choices: ['MIT', 'Apache', 'BSD', 'GPL'],
             default: ["MIT"],
             validate: nameInput => {
                 if (nameInput) {
@@ -133,7 +133,7 @@ quesitons()
 .then(response => {
     return createPage(response);
 })
-.then(data = > {
+.then(data => {
     return writeFile(data);
 })
 .catch(err => {
