@@ -40,7 +40,7 @@ function renderLicenseSection(license) {
 
   if(license != 'None'){
     section += '## License\n'
-    seciton += 'Checkout' + renderLicenseLink(license) + 'for this project license information.';
+    section += 'Checkout' + renderLicenseLink(license) + 'for this project license information.';
   }
   return section;
 }

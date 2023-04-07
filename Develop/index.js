@@ -3,9 +3,9 @@ const fs = require('fs');
 const inquirer = require('inquirer');
 // create a const for where the generated markdown page will be in your files
 const createPage = require('./utils/generateMarkdown.js');
+const generateMarkdown = require('./utils/generateMarkdown.js');
 // TODO: Create an array of questions for user input inside the questions function
-const questions = () => {
-    return inquirer.prompt([
+const questions = [
         
         {
             type: 'input',
@@ -112,8 +112,8 @@ const questions = () => {
             }
     
         }
-    ]);
-};
+    ];
+
 
 // TODO: Create a function to write README file
 const writeFile = data => {
@@ -128,15 +128,10 @@ const writeFile = data => {
 }; 
 
 // TODO: Call function to initialize app
-quesitons()
+function init(){
+    inquirer.prompt(questions)
+    .then (answers => writeFile(generateMarkdown(answers)))
+}
 
-.then(response => {
-    return createPage(response);
-})
-.then(data => {
-    return writeFile(data);
-})
-.catch(err => {
-    console.log(err)
-})
+init();
 //get user response and put it in createPage, display data in writefile on page and catch errors
