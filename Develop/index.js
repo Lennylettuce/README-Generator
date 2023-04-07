@@ -2,7 +2,7 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 // create a const for where the generated markdown page will be in your files
-const createPage = require('./utils/generateMarkdown.js');
+//const createPage = require('./utils/generateMarkdown.js');
 const generateMarkdown = require('./utils/generateMarkdown.js');
 // TODO: Create an array of questions for user input inside the questions function
 const questions = [
